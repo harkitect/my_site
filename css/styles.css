@@ -76,6 +76,15 @@ header .profile-image {
 header .profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
+.lego-image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
 .tag {
   background-color: #fff;
   color: black;
