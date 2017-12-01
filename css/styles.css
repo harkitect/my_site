@@ -56,28 +56,54 @@ a:hover {
 }
 
 header {
-  text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
+  margin-top: 80px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 4px solid white;
   transition: all .5s;
+
+  z-index: 2;
+
+  position: relative;
+  top: 100px;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(185deg);
 }
 
-.lego-image {
+.banner-image {
+  text-align: center;
+  background: url('../images/banner.jpg') no-repeat center ;
+  background-size: cover;
+  background-position: 25%;
+  overflow: hidden;
+  padding-top: 0px;
+  height: 300px;
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  margin-top: 100px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+
+.computer-image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.dog-image {
   margin-top: 50px;
   width: 250px;
   height: 250px;
@@ -92,6 +118,8 @@ header .profile-image:hover {
   border-radius: 5px;
   display: table;
   margin: 10px auto;
+  top: 100px;
+  position: relative;
 } 
 .location {
   background-color: #222;
@@ -167,13 +195,11 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(../images/twitter.svg);
 }
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../images/github.svg);
 }
 a.social:hover {
   opacity: 1;
